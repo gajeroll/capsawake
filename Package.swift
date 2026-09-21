@@ -25,6 +25,12 @@ let package = Package(
             dependencies: ["CapsAwakeCore", "CapsAwakeIPC", "CapsAwakeSystem"],
             swiftSettings: [.swiftLanguageMode(.v6)],
             linkerSettings: [.linkedFramework("IOKit"), .linkedFramework("Security")]
+        ),
+
+        .target(
+            name: "CapsAwakeUI",
+            dependencies: ["CapsAwakeCore"],
+            swiftSettings: [.swiftLanguageMode(.v6), .defaultIsolation(MainActor.self)]
         )
     ]
 )
