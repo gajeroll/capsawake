@@ -3,7 +3,7 @@ import PackageDescription
 let package = Package(
     name: "CapsAwake",
     platforms: [.macOS(.v14)],
-    products: [],
+    products: [.executable(name: "CapsAwakeDaemon", targets: ["CapsAwakeDaemon"]),],
     targets: [
         .target(name: "CapsAwakeCore", swiftSettings: [.swiftLanguageMode(.v6), .strictMemorySafety()]),
 
@@ -18,6 +18,13 @@ let package = Package(
             linkerSettings: [.linkedFramework("IOKit"), .linkedFramework("CoreGraphics")]
         ),
 
-        .testTarget(name: "CapsAwakeSystemTests", dependencies: ["CapsAwakeSystem", "CapsAwakeCore"], swiftSettings: [.swiftLanguageMode(.v6)])
+        .testTarget(name: "CapsAwakeSystemTests", dependencies: ["CapsAwakeSystem", "CapsAwakeCore"], swiftSettings: [.swiftLanguageMode(.v6)]),
+
+        .executableTarget(
+            name: "CapsAwakeDaemon",
+            dependencies: ["CapsAwakeCore", "CapsAwakeIPC", "CapsAwakeSystem"],
+            swiftSettings: [.swiftLanguageMode(.v6)],
+            linkerSettings: [.linkedFramework("IOKit"), .linkedFramework("Security")]
+        )
     ]
 )
