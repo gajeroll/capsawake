@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # CapsAwake has no package dependencies on purpose, so GitHub Actions is the only
+  # thing here with a supply chain. They are pinned by SHA in the workflows, which
+  # means they need something to unpin them.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: "ci"

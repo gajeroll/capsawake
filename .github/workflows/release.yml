@@ -1,0 +1,45 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: macos-26
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Check the tag against the version in the bundle
+        run: |
+          set -euo pipefail
+          tag="${GITHUB_REF_NAME#v}"
+          plist="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' resources/Info.plist)"
+          echo "tag $tag, Info.plist $plist"
+          if [ "$tag" != "$plist" ]; then
+            echo "Tag v$tag does not match CFBundleShortVersionString $plist." >&2
+            echo "resources/Info.plist is the one place the version lives." >&2
+            exit 1
+          fi
+
+      - name: Build and test
+        run: make build && make test && make lint
+
+      # Signing and notarizing needs a Developer ID certificate and an App Store
+      # Connect key, which are not in this repository's secrets. Until they are,
+      # cutting a release is `make notarize` on a maintainer's Mac and attaching the
+      # result here — this job exists to catch a tag that does not build or whose
+      # version disagrees with the bundle.
+      - name: Create the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" \
+            --title "$GITHUB_REF_NAME" \
+            --notes "See CHANGELOG.md." \
+            --draft \
+            --verify-tag

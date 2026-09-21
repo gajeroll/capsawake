@@ -1,0 +1,64 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Nothing here needs to write anything back.
+permissions:
+  contents: read
+
+# A new push supersedes the run in flight for the same ref.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  macos:
+    runs-on: macos-26
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      # Package.swift is swift-tools-version 6.2 and the targets ask for Swift 6
+      # language mode, `.strictMemorySafety()` and `.defaultIsolation`. The Swift that
+      # satisfies that is the one the `macos-26` image already has selected, so the job
+      # picks its runner rather than an Xcode path the image is free to rename. This
+      # step is the tripwire for the day that stops being true — an unsupported
+      # toolchain otherwise surfaces as a confusing manifest parse error.
+      - name: Check the toolchain
+        run: |
+          set -euo pipefail
+          swift --version
+          version="$(swift -version 2>&1 | sed -n 's/.*Swift version \([0-9][0-9.]*\).*/\1/p' | head -1)"
+          echo "Swift $version"
+          major="${version%%.*}"
+          minor="$(echo "$version" | cut -d. -f2)"
+          if [ "$major" -lt 6 ] || { [ "$major" -eq 6 ] && [ "${minor:-0}" -lt 2 ]; }; then
+            echo "CapsAwake needs Swift 6.2 or later; this runner has $version." >&2
+            echo "The macos-26 runner had it by default; check what that image ships now." >&2
+            exit 1
+          fi
+
+      # Through the Makefile rather than around it, so the targets contributors are
+      # told to run are the ones CI proves still work.
+      - name: Build
+        run: make build
+
+      - name: Test
+        run: make test
+
+      - name: Lint
+        run: make lint
+
+      - name: Shell scripts
+        run: |
+          for script in scripts/*.sh; do
+            zsh -n "$script"
+          done
+
+      # The path a contributor with no Apple Developer account takes. If this breaks,
+      # the project is not buildable by anyone outside the maintainer's Mac.
+      - name: Package without signing
+        run: SKIP_SIGNING=true ./scripts/build-app.sh "$RUNNER_TEMP/CapsAwake.app"
