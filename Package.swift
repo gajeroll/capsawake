@@ -9,6 +9,13 @@ let package = Package(
 
         .testTarget(name: "CapsAwakeCoreTests", dependencies: ["CapsAwakeCore"], swiftSettings: [.swiftLanguageMode(.v6)]),
 
-        .target(name: "CapsAwakeIPC", dependencies: ["CapsAwakeCore"], swiftSettings: [.swiftLanguageMode(.v6)])
+        .target(name: "CapsAwakeIPC", dependencies: ["CapsAwakeCore"], swiftSettings: [.swiftLanguageMode(.v6)]),
+
+        .target(
+            name: "CapsAwakeSystem",
+            dependencies: ["CapsAwakeCore", "CapsAwakeIPC"],
+            swiftSettings: [.swiftLanguageMode(.v6)],
+            linkerSettings: [.linkedFramework("IOKit"), .linkedFramework("CoreGraphics")]
+        )
     ]
 )
