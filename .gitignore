@@ -1,0 +1,29 @@
+.DS_Store
+._*
+
+.build/
+.swiftpm/
+*.xcodeproj
+DerivedData/
+dist/
+xcuserdata/
+*.xcuserdatad
+*.xcuserstate
+*.pkg
+
+# Certificates / signing / secrets
+*.p12
+*.cer
+*.pem
+*.p8
+*.key
+*.provisionprofile
+*.mobileprovision
+.env
+.env.*
+config/release.mk
+
+# IDEs / editors
+.cursor/
+.vscode/
+.idea/
