@@ -23,6 +23,17 @@ No telemetry, no network requests. English and Japanese UI.
 
 ## Installation
 
+### Homebrew (recommended)
+
+```sh
+brew trust --cask gajeroll/tap/capsawake
+brew install --cask gajeroll/tap/capsawake
+```
+
+Upgrade with `brew upgrade --cask capsawake`.
+
+On first launch, approve the background daemon under **System Settings → General → Login Items & Extensions**.
+
 ### Prebuilt binary
 
 Download `CapsAwake-<version>.zip` from [Releases](https://github.com/gajeroll/capsawake/releases), unzip it, and drag `CapsAwake.app` to `/Applications`.
@@ -43,6 +54,16 @@ open ~/Applications/CapsAwake.app
 Source builds run the menu and key actions, but cannot change sleep settings because `launchd` only starts the daemon from a notarized Developer ID build. Use a prebuilt [release](https://github.com/gajeroll/capsawake/releases) or `make notarize`. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### Uninstallation
+
+Homebrew:
+
+```sh
+brew uninstall --cask capsawake
+```
+
+The Accessibility permission stays in System Settings.
+
+Manual:
 
 ```sh
 scripts/uninstall.sh

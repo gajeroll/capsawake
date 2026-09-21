@@ -23,6 +23,17 @@ CapsAwake は、**Caps Lock** をスリープ抑止スイッチにする軽量�
 
 ## インストール
 
+### Homebrew（推奨）
+
+```sh
+brew trust --cask gajeroll/tap/capsawake
+brew install --cask gajeroll/tap/capsawake
+```
+
+更新は `brew upgrade --cask capsawake` です。
+
+初回起動時に、**システム設定 → 一般 → ログイン項目と拡張機能** でバックグラウンドデーモンを許可してください。
+
 ### ビルド済みバイナリ
 
 [Releases](https://github.com/gajeroll/capsawake/releases) から最新の `CapsAwake-<version>.zip` をダウンロード・展開し、`CapsAwake.app` を `/Applications` に移動してください。
@@ -43,6 +54,16 @@ open ~/Applications/CapsAwake.app
 ソースビルドはメニューやキー動作を確認できますが、スリープ設定は変更できません。デーモンは公証済みの Developer ID ビルドからのみ起動するためです。[リリース版](https://github.com/gajeroll/capsawake/releases)を使用するか、`make notarize` でビルドしてください。詳細は [CONTRIBUTING.md](CONTRIBUTING.md) を参照してください。
 
 ### アンインストール
+
+Homebrew:
+
+```sh
+brew uninstall --cask capsawake
+```
+
+アクセシビリティの許可はシステム設定に残ります。
+
+手作業:
 
 ```sh
 scripts/uninstall.sh

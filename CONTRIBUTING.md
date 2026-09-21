@@ -92,6 +92,7 @@ Localization strings live in `resources/Localizable.xcstrings`. When adding or e
    gh release edit v1.0.0 --draft=false
    ```
    (Do not run a second `gh release create`, as it will fail because the draft release already exists.)
+9. Update `version` and `sha256` in `Casks/capsawake.rb` on [gajeroll/homebrew-tap](https://github.com/gajeroll/homebrew-tap). Checksum steps are in that repository's [CONTRIBUTING.md](https://github.com/gajeroll/homebrew-tap/blob/main/CONTRIBUTING.md). Publish a new zip rather than replacing one a cask already references.
 
 ## Pull requests and commits
 
