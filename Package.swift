@@ -5,6 +5,8 @@ let package = Package(
     platforms: [.macOS(.v14)],
     products: [],
     targets: [
-        .target(name: "CapsAwakeCore", swiftSettings: [.swiftLanguageMode(.v6), .strictMemorySafety()])
+        .target(name: "CapsAwakeCore", swiftSettings: [.swiftLanguageMode(.v6), .strictMemorySafety()]),
+
+        .testTarget(name: "CapsAwakeCoreTests", dependencies: ["CapsAwakeCore"], swiftSettings: [.swiftLanguageMode(.v6)])
     ]
 )
