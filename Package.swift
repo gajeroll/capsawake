@@ -7,6 +7,8 @@ let package = Package(
     targets: [
         .target(name: "CapsAwakeCore", swiftSettings: [.swiftLanguageMode(.v6), .strictMemorySafety()]),
 
-        .testTarget(name: "CapsAwakeCoreTests", dependencies: ["CapsAwakeCore"], swiftSettings: [.swiftLanguageMode(.v6)])
+        .testTarget(name: "CapsAwakeCoreTests", dependencies: ["CapsAwakeCore"], swiftSettings: [.swiftLanguageMode(.v6)]),
+
+        .target(name: "CapsAwakeIPC", dependencies: ["CapsAwakeCore"], swiftSettings: [.swiftLanguageMode(.v6)])
     ]
 )
