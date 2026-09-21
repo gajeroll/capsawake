@@ -16,6 +16,8 @@ let package = Package(
             dependencies: ["CapsAwakeCore", "CapsAwakeIPC"],
             swiftSettings: [.swiftLanguageMode(.v6)],
             linkerSettings: [.linkedFramework("IOKit"), .linkedFramework("CoreGraphics")]
-        )
+        ),
+
+        .testTarget(name: "CapsAwakeSystemTests", dependencies: ["CapsAwakeSystem", "CapsAwakeCore"], swiftSettings: [.swiftLanguageMode(.v6)])
     ]
 )
