@@ -1,0 +1,1610 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "access_accessibility_impact": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Until allowed, dedicating Caps Lock to CapsAwake has no effect. CapsAwake stays off to prevent typing in capitals."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "許可されるまで「Caps LockをCapsAwake専用にする」は機能しません。意図しない大文字入力を防ぐため、CapsAwakeはオフのままになります。"
+          }
+        }
+      }
+    },
+    "access_accessibility_not_needed_note": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not needed while Caps Lock functions normally. CapsAwake reads the hardware lock state instead of key events."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caps Lockを通常の動作で使用している間は不要です。CapsAwakeはキーイベントではなく、ハードウェアのロック状態を直接読み取ります。"
+          }
+        }
+      }
+    },
+    "access_accessibility_purpose": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allows Caps Lock to toggle sleep prevention without typing in capitals. Keystrokes are never stored or transmitted."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "大文字を入力せずに、Caps Lockキーでスリープ抑止を切り替えられるようにします。キー入力の記録や送信は一切行いません。"
+          }
+        }
+      }
+    },
+    "access_accessibility_title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accessibility"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アクセシビリティ"
+          }
+        }
+      }
+    },
+    "access_daemon_impact_awaiting": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Until approved, system sleep settings cannot be changed. Your Mac will still sleep normally even if CapsAwake is turned on."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "承認されるまでスリープ設定を変更できません。CapsAwakeをオンにしても、Macは通常どおりスリープします。"
+          }
+        }
+      }
+    },
+    "access_daemon_impact_failing": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The sleep setting cannot be changed right now, so your Mac may sleep. CapsAwake continues to retry. If the problem persists, approve the daemon again in Login Items or restart CapsAwake."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現在スリープ設定を変更できないため、Macがスリープする可能性があります。CapsAwakeは再試行を続けています。解消しない場合は「ログイン項目」でデーモンを再度承認するか、CapsAwakeを再起動してください。"
+          }
+        }
+      }
+    },
+    "access_daemon_purpose": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modifies system sleep settings. This operation requires root privileges."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システムのスリープ設定を変更します。この操作にはroot権限が必要です。"
+          }
+        }
+      }
+    },
+    "access_daemon_title": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Background Daemon"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バックグラウンドデーモン"
+          }
+        }
+      }
+    },
+    "access_status_awaiting": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for approval"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "承認待ち"
+          }
+        }
+      }
+    },
+    "access_status_failing": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not working"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "動作していません"
+          }
+        }
+      }
+    },
+    "access_status_granted": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allowed"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "許可済み"
+          }
+        }
+      }
+    },
+    "access_status_not_needed": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not needed"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不要"
+          }
+        }
+      }
+    },
+    "all_caps_typing": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lock to capitals"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "大文字入力に固定"
+          }
+        }
+      }
+    },
+    "capsawake_toggle": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enable CapsAwake"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapsAwakeを有効にする"
+          }
+        }
+      }
+    },
+    "capsawake_toggle_help": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pressing the Caps Lock key also toggles this setting. The key LED indicates when sleep prevention is active."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caps Lockキーを押しても切り替わります。有効時はキーボードのLEDが点灯します。"
+          }
+        }
+      }
+    },
+    "change_energy_mode": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Switch Energy Mode when active"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有効時にエネルギーモードを切り替える"
+          }
+        }
+      }
+    },
+    "display_sleep_on_lid_close": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn off display when lid closes"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "蓋を閉じたときに画面をオフにする"
+          }
+        }
+      }
+    },
+    "energy_mode": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mode"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "モード"
+          }
+        }
+      }
+    },
+    "energy_mode_adapter": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "On power adapter"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "電源アダプタ使用時"
+          }
+        }
+      }
+    },
+    "energy_mode_automatic": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatic"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自動"
+          }
+        }
+      }
+    },
+    "energy_mode_battery": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "On battery"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バッテリー使用時"
+          }
+        }
+      }
+    },
+    "energy_mode_help": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The previous energy mode is restored when CapsAwake turns off. High Power increases heat and power draw. This is not recommended while keeping a closed Mac awake."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapsAwakeをオフにすると、元のエネルギーモードに戻ります。高パフォーマンスは発熱と消費電力が増加するため、Macを閉じた状態で使い続ける用途には推奨されません。"
+          }
+        }
+      }
+    },
+    "energy_mode_high": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "High Power (not recommended)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "高パフォーマンス（非推奨）"
+          }
+        }
+      }
+    },
+    "energy_mode_low": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Low Power"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "低電力"
+          }
+        }
+      }
+    },
+    "energy_mode_section": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Energy Mode"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "エネルギーモード"
+          }
+        }
+      }
+    },
+    "get_started": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get Started"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "始める"
+          }
+        }
+      }
+    },
+    "language": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Language"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "言語"
+          }
+        }
+      }
+    },
+    "launch_at_login": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open at login"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ログイン時に開く"
+          }
+        }
+      }
+    },
+    "lid_close_may_sleep_warning": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Closing the lid may still put this Mac to sleep"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "蓋を閉じるとMacがスリープする可能性があります"
+          }
+        }
+      }
+    },
+    "notification_accessibility": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapsAwake requires Accessibility permission to separate Caps Lock from capital typing."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caps Lockキーと大文字入力を分離するには、アクセシビリティ権限が必要です。"
+          }
+        }
+      }
+    },
+    "notification_battery": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapsAwake turned off sleep prevention because the battery is low."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バッテリー残量が低下したため、CapsAwakeはスリープ抑止をオフにしました。"
+          }
+        }
+      }
+    },
+    "notification_daemon_approval": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Approve the background daemon in Login Items & Extensions to manage sleep settings."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スリープ設定を管理するには、「ログイン項目と拡張機能」でバックグラウンドデーモンを承認してください。"
+          }
+        }
+      }
+    },
+    "notification_display_sleep_blocked": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not turn off the display while the lid is closed. Another app may be keeping it awake."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "蓋を閉じた状態で画面をオフにできませんでした。ほかのアプリケーションが画面の起動を維持している可能性があります。"
+          }
+        }
+      }
+    },
+    "notification_thermal": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapsAwake turned off sleep prevention because the system is overheating."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システムが高温になったため、CapsAwakeはスリープ抑止をオフにしました。"
+          }
+        }
+      }
+    },
+    "onboarding_back": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "戻る"
+          }
+        }
+      }
+    },
+    "onboarding_body": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn Caps Lock on to keep your Mac awake while working with the lid closed. Turn it off to restore normal sleep."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caps Lockをオンにすると、蓋を閉じた状態でもMacのスリープを抑止して作業を継続できます。オフにすると通常のスリープ動作に戻ります。"
+          }
+        }
+      }
+    },
+    "onboarding_capitals_body": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caps Lock always toggles CapsAwake. Choose whether pressing the key also types in capital letters."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caps Lockキーは常にCapsAwakeの切り替えに使用されます。キーを押した際に大文字入力も行うかどうかを選択してください。"
+          }
+        }
+      }
+    },
+    "onboarding_continue": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "続ける"
+          }
+        }
+      }
+    },
+    "onboarding_daemon_footer": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can continue without approving now and do so later in Settings. Sleep prevention will not work until approved."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "承認せずに進めて、後から設定画面で承認することもできます。ただし、承認されるまでスリープ抑止は動作しません。"
+          }
+        }
+      }
+    },
+    "onboarding_permissions_intro": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The next steps configure the permissions CapsAwake requires from macOS. Both can be changed later in Settings."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "次のステップで、CapsAwakeに必要なmacOSの権限を設定します。いずれの権限も後から設定画面で変更できます。"
+          }
+        }
+      }
+    },
+    "onboarding_preferences_footer": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Additional options can be configured at any time in Settings from the menu bar icon."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "その他のオプションは、メニューバーアイコンからいつでも設定画面を開いて変更できます。"
+          }
+        }
+      }
+    },
+    "onboarding_step %lld %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Step %1$lld of %2$lld"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ステップ %1$lld / %2$lld"
+          }
+        }
+      }
+    },
+    "onboarding_title": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcome to CapsAwake"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapsAwakeへようこそ"
+          }
+        }
+      }
+    },
+    "open_accessibility_settings": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Accessibility Settings…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アクセシビリティ設定を開く…"
+          }
+        }
+      }
+    },
+    "open_login_items_settings": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Login Items Settings…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ログイン項目の設定を開く…"
+          }
+        }
+      }
+    },
+    "open_settings": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定…"
+          }
+        }
+      }
+    },
+    "quit": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quit CapsAwake"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapsAwakeを終了"
+          }
+        }
+      }
+    },
+    "restart": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restart CapsAwake"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapsAwakeを再起動"
+          }
+        }
+      }
+    },
+    "restart_help": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restart CapsAwake to apply updated system permissions or code signatures."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システム権限やコード署名の変更を適用するには、CapsAwakeを再起動してください。"
+          }
+        }
+      }
+    },
+    "separate_energy_modes": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Set battery and power adapter separately"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バッテリーと電源アダプタを個別に設定"
+          }
+        }
+      }
+    },
+    "settings_section_advanced": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Advanced"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "詳細"
+          }
+        }
+      }
+    },
+    "settings_section_capsawake": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapsAwake"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapsAwake"
+          }
+        }
+      }
+    },
+    "settings_section_caps_lock": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caps Lock"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caps Lock"
+          }
+        }
+      }
+    },
+    "settings_section_general": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "General"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一般"
+          }
+        }
+      }
+    },
+    "settings_section_lid": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lid and Display"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "蓋とディスプレイ"
+          }
+        }
+      }
+    },
+    "settings_section_awake_range": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sleep Prevention Limits"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スリープ抑止の制限"
+          }
+        }
+      }
+    },
+    "awake_past_sleep_time": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "On system sleep timer"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システムスリープタイマー経過時"
+          }
+        }
+      }
+    },
+    "awake_past_sleep_time_always": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stay awake"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スリープを抑止"
+          }
+        }
+      }
+    },
+    "awake_past_sleep_time_lid_closed": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stay awake only while lid is closed"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "蓋を閉じているときのみスリープを抑止"
+          }
+        }
+      }
+    },
+    "awake_past_sleep_time_never": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow Mac to sleep"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Macのスリープを許可"
+          }
+        }
+      }
+    },
+    "awake_past_sleep_time_help": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System sleep time is configured in System Settings, measured from the last user input. Staying awake only while the lid is closed keeps a closed Mac running, while allowing an idle open Mac to sleep."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システムのスリープ時間はシステム設定で管理され、最後のユーザー操作から計測されます。「蓋を閉じているときのみ」を選択すると、閉じたMacでの処理を継続しながら、開いたまま放置されたMacはスリープさせることができます。"
+          }
+        }
+      }
+    },
+    "awake_sleep_time_now %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Current system setting: %lld minutes of inactivity."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "現在のシステム設定: 無操作状態が%lld分続くとスリープします。"
+          }
+        }
+      }
+    },
+    "awake_sleep_time_never": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This Mac is currently configured in System Settings to never sleep automatically."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このMacは現在、自動スリープしないようにシステム設定で構成されています。"
+          }
+        }
+      }
+    },
+    "awake_battery_floor": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Minimum battery level"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最低バッテリー残量"
+          }
+        }
+      }
+    },
+    "awake_battery_floor_any": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No minimum"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "制限なし"
+          }
+        }
+      }
+    },
+    "awake_battery_floor_help": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Applies only when running on battery. When the battery reaches this level, CapsAwake turns off automatically and displays a notification. This prevents completely draining the battery and allows normal sleep."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バッテリー駆動時のみ適用されます。バッテリーがこの残量に達すると、CapsAwakeは自動的にオフになり通知を表示します。バッテリーの完全放電を防ぎ、通常のスリープに移行します。"
+          }
+        }
+      }
+    },
+    "awake_thermal_help": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thermal protection cannot be disabled. CapsAwake turns off sleep prevention if the system reaches a critical temperature, or reaches a serious temperature with the lid closed."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "温度管理による保護は無効にできません。システムが重大な高温に達した場合、または蓋を閉じた状態で高温に達した場合、CapsAwakeは自動的にスリープ抑止を解除します。"
+          }
+        }
+      }
+    },
+    "notification_sleep_time": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapsAwake turned off sleep prevention because the system idle sleep timer expired."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無操作のままシステムスリープタイマーが経過したため、CapsAwakeはスリープ抑止をオフにしました。"
+          }
+        }
+      }
+    },
+    "settings_section_attention": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Action Required"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "要対応"
+          }
+        }
+      }
+    },
+    "settings_section_attention_help": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Details and purposes for each permission are listed in the Permissions section below."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "各権限の詳細と使用目的は、下の「権限」セクションに記載されています。"
+          }
+        }
+      }
+    },
+    "settings_section_permissions": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permissions"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "権限"
+          }
+        }
+      }
+    },
+    "settings_section_permissions_help": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapsAwake only requests permissions required for its features. Each entry describes its purpose."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CapsAwakeは機能の実行に必要な権限のみを要求します。各項目の用途は下記のとおりです。"
+          }
+        }
+      }
+    },
+    "show_menu_bar_icon": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show menu bar icon"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "メニューバーにアイコンを表示"
+          }
+        }
+      }
+    },
+    "status_accessibility_required": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accessibility permission required"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アクセシビリティ権限が必要です"
+          }
+        }
+      }
+    },
+    "status_daemon_approval_required": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Background daemon requires approval"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バックグラウンドデーモンの承認が必要です"
+          }
+        }
+      }
+    },
+    "status_privileged_error": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cannot change sleep settings"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スリープ設定を変更できません"
+          }
+        }
+      }
+    },
+    "tooltip_active": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caps Lock ON — Sleep prevention active"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caps Lock ON — スリープ抑止中"
+          }
+        }
+      }
+    },
+    "tooltip_active_caps_typing": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sleep prevention active — Capital typing on"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スリープ抑止中 — 大文字入力オン"
+          }
+        }
+      }
+    },
+    "tooltip_caps_typing": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capital typing on — Sleep prevention off"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "大文字入力オン — スリープ抑止オフ"
+          }
+        }
+      }
+    },
+    "tooltip_daemon_approval": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Approve the background daemon in Login Items to control sleep"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スリープを制御するには「ログイン項目」でデーモンを承認してください"
+          }
+        }
+      }
+    },
+    "tooltip_dedicated_error": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accessibility permission required to separate Caps Lock from capital typing"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caps Lockと大文字入力を分離するにはアクセシビリティ権限が必要です"
+          }
+        }
+      }
+    },
+    "tooltip_idle": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caps Lock OFF — Normal sleep"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caps Lock OFF — 通常のスリープ"
+          }
+        }
+      }
+    },
+    "tooltip_privileged_error": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Could not update sleep settings — Retrying"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スリープ設定を更新できません — 再試行中"
+          }
+        }
+      }
+    },
+    "remove_caps_lock_delay": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remove Caps Lock key delay"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caps Lockキーの遅延を無効にする"
+          }
+        }
+      }
+    },
+    "remove_caps_lock_delay_help": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS ignores Caps Lock presses shorter than about 75 ms. Fast taps may not reach CapsAwake while this delay is active. CapsAwake disables the keyboard delay while running and restores it on quit."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOSは約75ミリ秒未満のCaps Lockキー押下を無視します。この遅延が有効な場合、キーを素早くタップしてもCapsAwakeに反応しないことがあります。CapsAwakeの起動中にこの遅延を無効化し、終了時に元の設定に戻します。"
+          }
+        }
+      }
+    },
+    "capitals_shortcut": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shortcut for capitals"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "大文字入力のショートカット"
+          }
+        }
+      }
+    },
+    "capitals_shortcut_none_help": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Without a shortcut, Caps Lock only toggles CapsAwake. Capital typing can be toggled from the menu bar or Settings."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ショートカットを設定しない場合、Caps LockキーはCapsAwakeの切り替えのみを行います。大文字入力はメニューバーまたは設定から切り替えることができます。"
+          }
+        }
+      }
+    },
+    "capitals_shortcut_set_help %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press %@ to toggle typing in capitals. Pressing Caps Lock alone toggles CapsAwake."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@を押して大文字入力を切り替えます。Caps Lock単体を押すとCapsAwakeが切り替わります。"
+          }
+        }
+      }
+    },
+    "dedicated_mode": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dedicate Caps Lock to CapsAwake"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caps LockをCapsAwake専用にする"
+          }
+        }
+      }
+    },
+    "dedicated_mode_help": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When enabled, Caps Lock toggles sleep prevention without typing in capital letters. This option requires Accessibility permission. Capital typing can then be toggled separately using a shortcut or the menu bar. When disabled, Caps Lock functions normally and toggles sleep prevention at the same time."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "有効にすると、Caps Lockキーは大文字を入力せずにスリープ抑止のみを切り替えます。この機能にはアクセシビリティ権限が必要です。大文字入力はショートカットやメニューバーから個別に切り替えることができます。無効時は、通常のCaps Lock動作とスリープ抑止が同時に切り替わります。"
+          }
+        }
+      }
+    },
+    "capitals_shortcut_listening": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press keys…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "キーを入力…"
+          }
+        }
+      }
+    },
+    "capitals_shortcut_none": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "None"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "なし"
+          }
+        }
+      }
+    },
+    "capitals_shortcut_clear": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clear shortcut"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ショートカットを消去"
+          }
+        }
+      }
+    },
+    "capitals_shortcut_record_hint": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Records the next key combination pressed."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "次に押されたキーの組み合わせを登録します。"
+          }
+        }
+      }
+    },
+    "capitals_shortcut_listening_help": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hold the desired modifier keys and press Caps Lock. Caps Lock alone cannot be used because it is reserved for CapsAwake."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定したい修飾キーを押しながらCaps Lockを押してください。Caps Lock単体はCapsAwake用に予約されているため、ショートカットとしては使用できません。"
+          }
+        }
+      }
+    },
+    "shift_types_small_letters": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shift types lowercase while in capitals"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "大文字固定中にShiftで小文字を入力"
+          }
+        }
+      }
+    },
+    "shift_types_small_letters_help": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS standard behavior produces uppercase letters when pressing Shift while Caps Lock is on. Enabling this option follows Windows behavior, typing lowercase letters while holding Shift."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOSの標準動作では、Caps LockがオンのときにShiftキーを押しても大文字が入力されます。このオプションを有効にすると、WindowsのようにShiftキーを押している間は小文字が入力されます。"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
