@@ -30,7 +30,8 @@ if [[ "$APP_BUNDLE" != *.app ]]; then
 fi
 
 cd "$ROOT_DIR"
-swift build -c release
+# `make build` stamps the SDK version. `swift build` alone does not.
+make build
 
 # Assemble somewhere else and move into place at the very end. Building in place
 # meant that a failure part way through left an unsigned bundle sitting at the

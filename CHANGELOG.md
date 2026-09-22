@@ -8,6 +8,9 @@ version lives in `resources/Info.plist`; releases are tagged `vX.Y.Z`.
 
 ## [Unreleased]
 
+### Fixed
+- Record the SDK version at link time so Settings keeps the current macOS interface.
+
 ## [1.0.0] - 2026-09-22
 
 ### Added

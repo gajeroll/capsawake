@@ -23,8 +23,15 @@ help:
 	@echo ""
 	@echo "First time: cp config/release.example.mk config/release.mk"
 
+# SwiftPM writes the deployment target into the SDK version field, so macOS keeps
+# the pre-Liquid Glass interface. 14.0 matches platforms in Package.swift.
+MACOS_DEPLOYMENT_TARGET := 14.0
+MACOS_SDK_VERSION := $(shell xcrun --sdk macosx --show-sdk-version)
+
 build:
-	swift build -c release
+	swift build -c release \
+		-Xlinker -platform_version -Xlinker macos \
+		-Xlinker $(MACOS_DEPLOYMENT_TARGET) -Xlinker $(MACOS_SDK_VERSION)
 
 test:
 	swift test
