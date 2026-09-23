@@ -57,4 +57,4 @@ To remove all artifacts, including launchd registrations and the root-owned base
 
 ## Supported versions
 
-Version 1.0.0 and later (the latest release).
+Version 0.1.0 and later (the latest release).

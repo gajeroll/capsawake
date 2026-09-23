@@ -74,22 +74,22 @@ Localization strings live in `resources/Localizable.xcstrings`. When adding or e
    ```sh
    make release-check
    ```
-4. Verify `CFBundleShortVersionString` in `resources/Info.plist` matches the target release version (e.g., `1.0.0`).
+4. Verify `CFBundleShortVersionString` in `resources/Info.plist` matches the target release version (e.g., `0.1.0`).
 5. Build, sign, notarize, and staple the release archive:
    ```sh
    make notarize
    ```
-   This produces `dist/release/CapsAwake-notarized.zip`. Rename this file to `CapsAwake-<version>.zip` (e.g., `CapsAwake-1.0.0.zip`).
+   This produces `dist/release/CapsAwake-notarized.zip`. Rename this file to `CapsAwake-<version>.zip` (e.g., `CapsAwake-0.1.0.zip`).
 6. Push the tag:
    ```sh
-   git tag v1.0.0
-   git push origin v1.0.0
+   git tag v0.1.0
+   git push origin v0.1.0
    ```
 7. The GitHub Actions workflow (`.github/workflows/release.yml`) creates a draft release on tag push via `gh release create --draft`.
 8. Upload the notarized zip and publish the release:
    ```sh
-   gh release upload v1.0.0 dist/release/CapsAwake-1.0.0.zip
-   gh release edit v1.0.0 --draft=false
+   gh release upload v0.1.0 dist/release/CapsAwake-0.1.0.zip
+   gh release edit v0.1.0 --draft=false
    ```
    (Do not run a second `gh release create`, as it will fail because the draft release already exists.)
 9. Update `version` and `sha256` in `Casks/capsawake.rb` on [gajeroll/homebrew-tap](https://github.com/gajeroll/homebrew-tap). Checksum steps are in that repository's [CONTRIBUTING.md](https://github.com/gajeroll/homebrew-tap/blob/main/CONTRIBUTING.md). Publish a new zip rather than replacing one a cask already references.
